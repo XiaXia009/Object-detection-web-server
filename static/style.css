@@ -1,0 +1,23 @@
+/* static/style.css */
+
+/* 共通樣式，適用於所有裝置 */
+img {
+    max-width: 50%;
+    height: auto;
+}
+
+@media screen and (max-width: 768px) {
+    /* 手機端 */
+    img {
+        max-width: 75%;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    /* PC 端 */
+    img {
+        max-width: 40%;
+        height: auto;
+    }
+}

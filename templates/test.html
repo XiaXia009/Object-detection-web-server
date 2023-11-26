@@ -1,0 +1,23 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YOLO Image Upload</title>
+</head>
+<body>
+    <h1>YOLO Image Upload</h1>
+    
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <label for="img">Select Image:</label>
+        <input type="file" name="img" accept=".png, .jpg, .jpeg" />
+        <br />
+        <label for="conf">Confidence Threshold (0-1):</label>
+        <input type="number" name="conf" step="0.01" min="0" max="1" value="0.6" />
+        <br />
+        <input type="submit" value="send" />
+    </form>
+
+</body>
+</html>
